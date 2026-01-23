@@ -1,0 +1,11 @@
+{
+  "movieTicket": [
+    {
+      "name": "Ananya",
+      "email": "ananya@gmail.com",
+      "movie": "Saiyara",
+      "date": "30-12-2025",
+      "time": "1pm"
+    }
+  ]
+}

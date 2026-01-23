@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
+import './login.css'
 
 const Login = () => {
   let navigate = useNavigate()
@@ -59,13 +60,38 @@ const Login = () => {
 
   return (
     <>
-      <form onSubmit={handleSubmit}>
-     
-      Email : <input type=' text' placeholder='enter your name' name='email' value={form.email} onChange={handleChange}></input><br></br>
-      Password : <input type=' text' placeholder='enter your name' name='pass' value={form.pass} onChange={handleChange}></input><br></br>
-      <button type='submit'>login</button>
+      <div className="login-container">
       
-      </form>
+      <div className="login-card">
+        
+        <div className="login-header">
+          <h1 className="logo">MovieTicket</h1>
+          <p className="subtitle">Sign in to your account</p>
+        </div>
+        
+        <form className="login-form" onSubmit={handleSubmit}>
+         
+          <div className="input-group">
+            <label className="input-label">Email</label>
+            <input type="email" name="email" value={form.email} onChange={handleChange} className="input-field" placeholder="Enter your email"/>
+          </div>
+          
+          <div className="input-group">
+            <label className="input-label">Password</label>
+            <input type="password" name="pass" value={form.pass} onChange={handleChange} className="input-field" placeholder="Enter your password"/>
+          </div>
+          
+          <button type="submit" className="login-btn">Sign In</button>
+          
+          <p className="register-link">
+            New user? <a href="/register">Register here</a>
+          </p>
+       
+        </form>
+     
+      </div>
+    
+    </div>
     </>
   )
 }

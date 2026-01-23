@@ -1,5 +1,5 @@
 /* login-container css */
-.register-container {
+.login-container {
   min-height: 100vh;
   background: linear-gradient(135deg, #991b1b 0%, #000000 50%, #991b1b 100%);
   display: flex;
@@ -11,7 +11,7 @@
 }
 
 /* login card css */
-.register-card {
+.login-card {
   background: rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(255, 255, 248, 0.2);
   border-radius: 20px;
@@ -24,7 +24,7 @@
 }
 
 /* login header section */
-.register-header {
+.login-header {
   text-align: center;
   margin-bottom: 1.8rem;
 }
@@ -46,7 +46,7 @@
 }
 
 /* form css */
-.register-form {
+.login-form {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
@@ -91,7 +91,7 @@
 }
 
 /* login button css */
-.register-btn {
+.login-btn {
   width: 100%;
   background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
   color: #ffffff;
@@ -107,27 +107,27 @@
   box-shadow: 0 10px 25px rgba(220, 38, 38, 0.4);
 }
 
-.register-btn:hover {
+.login-btn:hover {
   background: linear-gradient(135deg, #b91c1c 0%, #991b1b 100%);
   transform: translateY(-2px);
   box-shadow: 0 15px 35px rgba(220, 38, 38, 0.6);
 }
 
-.login-link {
+.register-link {
   text-align: center;
   color: rgba(248, 250, 252, 0.8);
   font-size: 0.95rem;
   margin: 0;
 }
 
-.login-link a {
+.register-link a {
   color: #da4646;
   font-weight: 600;
   text-decoration: underline;
   transition: all 0.2s ease;
 }
 
-.login-link a:hover {
+.register-link a:hover {
   color: #fca5a5;
   text-decoration: none;
 }
@@ -146,12 +146,12 @@
 
 /* responsive css */
 @media (max-width: 480px) {
-  .register-card {
+  .login-card {
     padding: 1.75rem 1.5rem;
     margin: 1rem;
   }
   
-  .register-header {
+  .login-header {
     margin-bottom: 2rem;
   }
   
@@ -164,18 +164,18 @@
   }
   
   .input-field,
-  .register-btn {
+  .login-btn {
     padding: 0.875rem 1rem;
     font-size: 0.9rem;
   }
 }
  /* for mobile phone */
 @media (max-width: 360px) {
-  .register-container {
+  .login-container {
     padding: 0.5rem;
   }
   
-  .register-card {
+  .login-card {
     padding: 1.5rem 1.25rem;
     margin: 0.75rem;
     max-width: 340px;
@@ -186,19 +186,19 @@
   }
   
   .input-field,
-  .register-btn {
+  .login-btn {
     padding: 0.8rem 1rem;
     font-size: 0.875rem;
   }
   
-  .register-form {
+  .login-form {
     gap: 1.25rem;
   }
 }
 
 /* for tablet */
 @media (min-width: 768px) {
-  .register-card {
+  .login-card {
     padding: 2.5rem;
     max-width: 420px;
   }

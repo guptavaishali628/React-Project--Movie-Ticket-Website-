@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-
+import './Register.css'
 const Register = () => {
   
   let navigate = useNavigate()
@@ -121,15 +121,48 @@ const Register = () => {
   
   return (
     <>
-      <form onSubmit={handleSubmit}>
+      <div className="register-container">
       
-      Name: <input type='text' placeholder='enter your name' name='name' value={form.name} onChange={handleChange}></input><br></br>
-      Email : <input type='text' placeholder='enter your email ' name='email' value={form.email} onChange={handleChange}></input><br></br>
-      Password : <input type='text' placeholder='enter strong password' name='pass' value={form.pass} onChange={handleChange}></input><br></br>
-      Confirm Password : <input type='text' placeholder='enter Confirm Password' name='cpass' value={form.cpass} onChange={handleChange}></input><br></br>
-      <button type='submit'>register</button>
+      <div className="register-card">
+        
+        <div className="register-header">
+          <h1 className="logo">MovieTicket</h1>
+          <p className="subtitle">Register to your account</p>
+        </div>
+        
+        <form className="register-form" onSubmit={handleSubmit}>
+        
+          <div className="input-group">
+            <label className="input-label">Name</label>
+            <input type="name" name="name" value={form.name} onChange={handleChange} className="input-field" placeholder="Enter your name"/>
+          </div>
+
+          <div className="input-group">
+            <label className="input-label">Email</label>
+            <input type="email" name="email" value={form.email} onChange={handleChange} className="input-field" placeholder="Enter your email"/>
+          </div>
+          
+          <div className="input-group">
+            <label className="input-label">Password</label>
+            <input type="password" name="pass" value={form.pass} onChange={handleChange} className="input-field" placeholder="Enter your password"/>
+          </div>
+          
+          <div className="input-group">
+            <label className="input-label">Confirm Password</label>
+            <input type="password" name="cpass" value={form.cpass} onChange={handleChange} className="input-field" placeholder="Enter confirm password"/>
+          </div>          
+          
+          <button type="submit" className="register-btn">Register</button>
+          
+          <p className="login-link">
+            already registerd? <a href="/login">Login here</a>
+          </p>
+
+        </form>
       
-      </form>
+      </div>
+    
+    </div>
     </>
   )
 }
