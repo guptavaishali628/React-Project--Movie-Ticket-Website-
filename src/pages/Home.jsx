@@ -13,12 +13,6 @@ import './Home.css';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
 export default function Home() {
-  const progressCircle = useRef(null);
-  const progressContent = useRef(null);
-  const onAutoplayTimeLeft = (s, time, progress) => {
-    progressCircle.current.style.setProperty('--progress', 1 - progress);
-    progressContent.current.textContent = `${Math.ceil(time / 1000)}s`;
-  };
   return (
     <>
       <Swiper
@@ -33,22 +27,18 @@ export default function Home() {
         }}
         navigation={true}
         modules={[Autoplay, Pagination, Navigation]}
-        onAutoplayTimeLeft={onAutoplayTimeLeft}
         className="mySwiper"
       >
         <SwiperSlide>
-          <div className="home-text">
-            <p className='text-6xl'>Border 2</p>
-            <p className='text-4xl'>A | Action, Thiller</p>
-            <button onClick={bookNow}>Book Now</button>
+          <div className='swiper-slide-text'>
+            <p></p>
+            <p></p>
+            <button></button>
           </div>
-          <img 
-            src="\photos\home_page_photos\Marty-Supreme_img1.jpg"
-            alt="Border 2" 
-            className="home-img"
-          />
+          <div className='swiper-slide-img'>
+          <img src='\photos\home_page_photos\border2_img2.jpg'></img>
+          </div>
         </SwiperSlide>
-        
         <SwiperSlide>Slide 2</SwiperSlide>
         <SwiperSlide>Slide 3</SwiperSlide>
         <SwiperSlide>Slide 4</SwiperSlide>
@@ -57,12 +47,6 @@ export default function Home() {
         <SwiperSlide>Slide 7</SwiperSlide>
         <SwiperSlide>Slide 8</SwiperSlide>
         <SwiperSlide>Slide 9</SwiperSlide>
-        <div className="autoplay-progress" slot="container-end">
-          <svg viewBox="0 0 48 48" ref={progressCircle}>
-            <circle cx="24" cy="24" r="20"></circle>
-          </svg>
-          <span ref={progressContent}></span>
-        </div>
       </Swiper>
     </>
   );
