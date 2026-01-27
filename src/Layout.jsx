@@ -7,8 +7,8 @@ const Layout = () => {
     {/* ----------------------------------------navbar----------------------------------- */}
       <header className="bg-gradient-to-r from-red-800 via-black to-red-800 text-white shadow-2xl sticky top-0 z-50 py-4 px-4">
         
-        <div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-6 lg:gap-0">
-          <h1 className="text-xl sm:text-2xl lg:text-3xl font-bold text-white bg-clip-text text-transparent order-1">Movie Ticket</h1>
+        <div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-6 lg:gap-6">
+          <h1 className="text-xl sm:text-2xl lg:text-3xl font-bold text-white bg-clip-text text-transparent order-1">MovieTicket</h1>
        
         <div className="w-full lg:w-80 xl:w-96 order-3 lg:order-2 flex-shrink-0 mx-2 lg:mx-0">
           <input type='text' placeholder='Search for movies....'

@@ -2,6 +2,8 @@ import React, { useRef, useState } from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
+import '../App.css'
+
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -11,8 +13,10 @@ import './Home.css';
 
 // import required modules
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import { useNavigate } from 'react-router-dom';
 
 export default function Home() {
+ 
   return (
     <>
       <Swiper
@@ -29,24 +33,32 @@ export default function Home() {
         modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper"
       >
-        <SwiperSlide>
+        <SwiperSlide className='p-10'>
           <div className='swiper-slide-text'>
-            <p></p>
-            <p></p>
-            <button></button>
+            <p className='text-4xl font-bold'>Border 2</p>
+            <p className='text-2xl font-bold'>UA13 | Action, Drama + 1 more</p>
+            <a href='/booking' className='py-4 px-10 bg-black text-white rounded-2xl'>Book Now</a>
           </div>
           <div className='swiper-slide-img'>
-          <img src='\photos\home_page_photos\border2_img2.jpg'></img>
+            <div>
+            <img src='\photos\home_page_photos\border2_img2.jpg'></img>
+            </div>
           </div>
         </SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
-        <SwiperSlide>Slide 5</SwiperSlide>
-        <SwiperSlide>Slide 6</SwiperSlide>
-        <SwiperSlide>Slide 7</SwiperSlide>
-        <SwiperSlide>Slide 8</SwiperSlide>
-        <SwiperSlide>Slide 9</SwiperSlide>
+       
+         <SwiperSlide className='p-10'>
+          <div className='swiper-slide-text'>
+            <p className='text-4xl font-bold'>Dhurander</p>
+            <p className='text-2xl font-bold'>A | Action, Thiller</p>
+            <a href='/booking' className='py-4 px-10 bg-black text-white rounded-2xl'>Book Now</a>
+          </div>
+          <div className='swiper-slide-img'>
+            <div>
+            <img src='\photos\home_page_photos\dhurander_img3.jpg'></img>
+            </div>
+          </div>
+        </SwiperSlide>
+       
       </Swiper>
     </>
   );
