@@ -58,6 +58,20 @@ export default function Home() {
             </div>
           </div>
         </SwiperSlide>
+
+          <SwiperSlide className='p-10'>
+          <div className='swiper-slide-text'>
+            <p className='text-4xl font-bold'>Mardani 3</p>
+            <p className='text-2xl font-bold'>UA16 | Crime, Thiller</p>
+            <a href='/booking' className='py-4 px-10 bg-black text-white rounded-2xl'>Book Now</a>
+          </div>
+          <div className='swiper-slide-img'>
+            <div>
+            <img src='\photos\home_page_photos\mardani3_img4.jpg'></img>
+            </div>
+          </div>
+        </SwiperSlide>
+       
        
       </Swiper>
     </>
