@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import './login.css'
+import { Link, Outlet } from 'react-router-dom'
 
 const Login = () => {
   let navigate = useNavigate()
@@ -84,7 +85,7 @@ const Login = () => {
           <button type="submit" className="login-btn">Sign In</button>
           
           <p className="register-link">
-            New user? <a href="/register">Register here</a>
+            New user?<Link to='/register'>Register here</Link>
           </p>
        
         </form>

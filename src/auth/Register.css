@@ -119,19 +119,6 @@
   font-size: 0.95rem;
   margin: 0;
 }
-
-.login-link a {
-  color: #da4646;
-  font-weight: 600;
-  text-decoration: underline;
-  transition: all 0.2s ease;
-}
-
-.login-link a:hover {
-  color: #fca5a5;
-  text-decoration: none;
-}
-
 /* animation */
 @keyframes slideUp {
   from {

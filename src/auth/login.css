@@ -120,18 +120,6 @@
   margin: 0;
 }
 
-.register-link a {
-  color: #da4646;
-  font-weight: 600;
-  text-decoration: underline;
-  transition: all 0.2s ease;
-}
-
-.register-link a:hover {
-  color: #fca5a5;
-  text-decoration: none;
-}
-
 /* animation */
 @keyframes slideUp {
   from {

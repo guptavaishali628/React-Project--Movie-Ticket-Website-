@@ -19,6 +19,8 @@ export default function Home() {
  
   return (
     <>
+    {/* -----------------------------------------------Hero section of home page-------------------------------- */}
+    <div className='py-4 px-4 h-screen w-full'>
       <Swiper
         spaceBetween={30}
         centeredSlides={true}
@@ -71,9 +73,29 @@ export default function Home() {
             </div>
           </div>
         </SwiperSlide>
-       
-       
       </Swiper>
+    </div>
+    {/* --------------------------------------------------movies section---------------------------------------- */}
+    <div className='py-4 px-4 h-full w-screen bg-amber-200'>
+      <div>
+     
+      <p>Now Showing in</p>
+      
+      <div className='movie-filters'>
+      <button className=''>Filters</button>
+      <button>Top Selling</button>
+      <button>English</button>
+      <button>Hindi</button>
+      <button>Drama</button>
+      <button>Thriller</button>
+      </div>
+
+      <div className='movies-card'>
+        <div></div>
+      </div>
+     
+      </div>
+    </div>
     </>
   );
 }

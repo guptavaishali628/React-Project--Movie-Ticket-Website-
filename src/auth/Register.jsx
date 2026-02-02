@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
+import {Link} from 'react-router-dom'
 import './Register.css'
 const Register = () => {
   
@@ -155,7 +156,7 @@ const Register = () => {
           <button type="submit" className="register-btn">Register</button>
           
           <p className="login-link">
-            already registerd? <a href="/login">Login here</a>
+            already registerd? <Link to="/login">Login here</Link>
           </p>
 
         </form>
