@@ -10,13 +10,15 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
 import './Home.css';
-import MovieCard from '../components/MovieCard.jsx'
+
 
 // import required modules
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
 // react icon import
 import { LuListFilter } from "react-icons/lu";
+import UpcomingMovie from '../components/UpcomingMovie.jsx';
+import MovieCard from '../components/MovieCard.jsx'
 
 export default function Home() {
  
@@ -79,28 +81,33 @@ export default function Home() {
       </Swiper>
     </div>
     {/* --------------------------------------------------movies section---------------------------------------- */}
-    <div className='py-12 px-10 h-screen w-full flex flex-col gap-4'>
+    <div className='py-2 px-10 h-auto w-full flex flex-col gap-4'>
       <div>
       <p className='text-3xl font-bold text-gray-800 mb-3'>Now Showing in</p>
       <p className='text-xl text-gray-600 font-semibold'>Bhopal</p>
       </div>
       
       <div className='movie-filters flex flex-wrap justify-items-start gap-4'>
-      <button className='px-3 py-0.5 flex items-center justify-between gap-1 bg-white text-gray-800 border rounded-xl border border-gray-400 hover:cursor-pointer active:scale-90 '>
+      <button className='px-3 py-0.5 flex items-center justify-between gap-1 bg-white text-gray-800 border rounded-xl b border-gray-400 hover:cursor-pointer active:scale-90 '>
         <LuListFilter/>
         Filters</button>
-      <button className='px-3 py-0.5 flex items-center justify-between gap-1 bg-white text-gray-800 border rounded-xl border border-gray-400 hover:cursor-pointer active:scale-90 '>
+      <button className='px-3 py-0.5 flex items-center justify-between gap-1 bg-white text-gray-800 border rounded-xl border-gray-400 hover:cursor-pointer active:scale-90 '>
         Top Selling</button>
-      <button className='px-3 py-0.5 flex items-center justify-between gap-1 bg-white text-gray-800 border rounded-xl border border-gray-400 hover:cursor-pointer active:scale-90 '>
+      <button className='px-3 py-0.5 flex items-center justify-between gap-1 bg-white text-gray-800 border rounded-xl border-gray-400 hover:cursor-pointer active:scale-90 '>
         English</button>
-      <button className='px-3 py-0.5 flex items-center justify-between gap-1 bg-white text-gray-800 border rounded-xl border border-gray-400 hover:cursor-pointer active:scale-90 '>
+      <button className='px-3 py-0.5 flex items-center justify-between gap-1 bg-white text-gray-800 border rounded-xl border-gray-400 hover:cursor-pointer active:scale-90 '>
         Hindi</button>
-      <button className='px-3 py-0.5 flex items-center justify-between gap-1 bg-white text-gray-800 border rounded-xl border border-gray-400 hover:cursor-pointer active:scale-90 '>
+      <button className='px-3 py-0.5 flex items-center justify-between gap-1 bg-white text-gray-800 border rounded-xl border-gray-400 hover:cursor-pointer active:scale-90 '>
         Drama</button>
-      <button className='px-3 py-0.5 flex items-center justify-between gap-1 bg-white text-gray-800 border rounded-xl border border-gray-400 hover:cursor-pointer active:scale-90 '>
+      <button className='px-3 py-0.5 flex items-center justify-between gap-1 bg-white text-gray-800 border rounded-xl border-gray-400 hover:cursor-pointer active:scale-90 '>
         Thriller</button>
       </div>
       <MovieCard/>
+      
+      <div className='mt-6 flex flex-col gap-4'>
+      <p className='text-3xl font-bold text-gray-800 mb-3'>Upcomming Movies</p>
+      <UpcomingMovie/>
+      </div>
     </div>
   </>
   );

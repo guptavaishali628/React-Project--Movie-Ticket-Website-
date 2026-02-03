@@ -11,28 +11,28 @@ const MovieCard = () => {
         },
         {
             'image': '/photos/movieCard/dhurandhar_img3.jpg',
-            'name': 'Border 2',
-            'detail': 'UA13 + Hindi'
+            'name': 'Dhurandhar',
+            'detail': 'A + Hindi'
         },
         {
             'image': '/photos/movieCard/mardaani3_img2.jpg',
-            'name': 'Border 2',
-            'detail': 'UA13 + Hindi'
+            'name': 'Mardaani 3',
+            'detail': 'UA16 + Hindi'
         },
         {
             'image': '/photos/movieCard/martySupreme_img5.jpg',
-            'name': 'Border 2',
-            'detail': 'UA13 + Hindi'
+            'name': 'Marty Supreme',
+            'detail': 'A + English'
         },
         {
             'image': '/photos/movieCard/mayasabha_img4.jpg',
-            'name': 'Border 2',
+            'name': 'Mayasabha-The Hall of Illusions',
             'detail': 'UA13 + Hindi'
         },
         {
             'image': '/photos/movieCard/sendHelp_img6.jpg',
-            'name': 'Border 2',
-            'detail': 'UA13 + Hindi'
+            'name': 'Send Help',
+            'detail': 'A + English'
         },
     ]
   
