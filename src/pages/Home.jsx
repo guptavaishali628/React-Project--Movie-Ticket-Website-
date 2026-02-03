@@ -10,10 +10,13 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
 import './Home.css';
+import MovieCard from '../components/MovieCard.jsx'
 
 // import required modules
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
-import { useNavigate } from 'react-router-dom';
+
+// react icon import
+import { LuListFilter } from "react-icons/lu";
 
 export default function Home() {
  
@@ -76,26 +79,29 @@ export default function Home() {
       </Swiper>
     </div>
     {/* --------------------------------------------------movies section---------------------------------------- */}
-    <div className='py-4 px-4 h-full w-screen bg-amber-200'>
+    <div className='py-12 px-10 h-screen w-full flex flex-col gap-4'>
       <div>
-     
-      <p>Now Showing in</p>
+      <p className='text-3xl font-bold text-gray-800 mb-3'>Now Showing in</p>
+      <p className='text-xl text-gray-600 font-semibold'>Bhopal</p>
+      </div>
       
-      <div className='movie-filters'>
-      <button className=''>Filters</button>
-      <button>Top Selling</button>
-      <button>English</button>
-      <button>Hindi</button>
-      <button>Drama</button>
-      <button>Thriller</button>
+      <div className='movie-filters flex flex-wrap justify-items-start gap-4'>
+      <button className='px-3 py-0.5 flex items-center justify-between gap-1 bg-white text-gray-800 border rounded-xl border border-gray-400 hover:cursor-pointer active:scale-90 '>
+        <LuListFilter/>
+        Filters</button>
+      <button className='px-3 py-0.5 flex items-center justify-between gap-1 bg-white text-gray-800 border rounded-xl border border-gray-400 hover:cursor-pointer active:scale-90 '>
+        Top Selling</button>
+      <button className='px-3 py-0.5 flex items-center justify-between gap-1 bg-white text-gray-800 border rounded-xl border border-gray-400 hover:cursor-pointer active:scale-90 '>
+        English</button>
+      <button className='px-3 py-0.5 flex items-center justify-between gap-1 bg-white text-gray-800 border rounded-xl border border-gray-400 hover:cursor-pointer active:scale-90 '>
+        Hindi</button>
+      <button className='px-3 py-0.5 flex items-center justify-between gap-1 bg-white text-gray-800 border rounded-xl border border-gray-400 hover:cursor-pointer active:scale-90 '>
+        Drama</button>
+      <button className='px-3 py-0.5 flex items-center justify-between gap-1 bg-white text-gray-800 border rounded-xl border border-gray-400 hover:cursor-pointer active:scale-90 '>
+        Thriller</button>
       </div>
-
-      <div className='movies-card'>
-        <div></div>
-      </div>
-     
-      </div>
+      <MovieCard/>
     </div>
-    </>
+  </>
   );
 }
